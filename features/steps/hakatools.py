@@ -7,7 +7,7 @@ class hakatool:
     @given(u'ingreso a la siguiente url "{url}"')
     def step_impl(context,url):
         global wdriver
-        wdriver=webdriver.Chrome("selenium/webdriver/chromedriver")
+        wdriver=webdriver.Chrome("/Users/sebastianaravenasandoval/Documents/projects/Arquetipo-Python-BDD/selenium/webdriver/chromedriver")
         wdriver.get(url)
         wdriver.maximize_window()
         time.sleep(5)
@@ -15,7 +15,7 @@ class hakatool:
 
     @when(u'seleccione el apartado de hakatool')
     def step_impl(context):
-        hktool=wdriver.find_element_by_xpath("/html/body/div[2]/header/div/div/nav/div[3]/ul/li[2]/a")
+        hktool=wdriver.find_element_by_xpath("//a[contains(text(),'HakaTools')][1]")
         hktool.click()
         time.sleep(5)
         
@@ -31,6 +31,7 @@ class hakatool:
 
     @when(u'ingrese el nombre {nombre} ,{correo} ,{dir1} ,{dir2}')
     def step_impl(context,nombre,correo,dir1,dir2):
+        
         hktoolname=wdriver.find_element_by_xpath("/html/body/app-root/app-forms/div[2]/div[2]/div[1]/app-basic-form/div/div[2]/form/div/div[1]/input")
         hktoolname.send_keys(nombre)
 
@@ -45,3 +46,8 @@ class hakatool:
         
         hktoolbt=wdriver.find_element_by_xpath("/html/body/app-root/app-forms/div[2]/div[2]/div[1]/app-basic-form/div/div[2]/form/div/button")
         hktoolbt.click()
+        wdriver.close()
+
+
+        
+        
