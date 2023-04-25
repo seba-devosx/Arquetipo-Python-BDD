@@ -1,0 +1,8 @@
+Feature: prueba de formulario
+
+  Scenario Outline: ingreso de datos dentro de un formulario -- @1.1 
+    Given ingreso a la siguiente url "https://www.hakalab.com/" ... passed in 7.234s
+    When seleccione el apartado de hakatool ... passed in 11.774s
+    And seleccione formulario ... passed in 0.035s
+    And ingrese el nombre axl ,axl@gmail.com ,AV siempre viva ,Av mexico ... passed in 0.202s
+
