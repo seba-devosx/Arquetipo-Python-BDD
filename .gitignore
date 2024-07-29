@@ -2,3 +2,4 @@ venv
 *.png
 *.json
 /.idea
+/helpers/allure-2.30.0/allure-result
