@@ -1,0 +1,3 @@
+lista de comando a automatizar 
+generador de servidor post ejecucion
+allure-2.10.0/bin/allure serve  allure-2.10.0/allure-results/f5500fbe-bfd0-4fc0-b42b-31b75d03ecdf-result.json
