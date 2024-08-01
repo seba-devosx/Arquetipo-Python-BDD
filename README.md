@@ -1,5 +1,5 @@
 # Arquetipo-Python-BDD
-Arquetipo para la realización de testing en software
+Arquetipo para la realización de testing en software Automatizado,web scraping, en proceso de construccion
 
 # lista de comandos
 Ejecuctar y generar datos para reporte
